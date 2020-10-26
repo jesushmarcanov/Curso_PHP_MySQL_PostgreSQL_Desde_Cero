@@ -15,4 +15,3 @@ define('PI', 3.14);
 define('NOMBRE', 'Jesús');
 echo PI;
 echo NOMBRE;
-

@@ -8,6 +8,8 @@ $meses = array(
 	'Mayo', 'Junio', 'Julio', 'Agosto',
 	'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
 );
+
+$jesus = array('telefono' => 4148055174, 'edad' => 40, 'pais' => 'Venezuela');
 ?>
 
 <!DOCTYPE html>
@@ -21,8 +23,14 @@ $meses = array(
     <h1>Meses del año</h1>
     <ul>
         <?php
-            foreach($meses as $mes){
-                echo '<li>'. $mes . '</li>';
+            #Con foreach podemos recorrer arreglos de una manera muy facil
+            // foreach($meses as $mes){
+            //     echo '<li>'. $mes . '</li>';
+            // }
+
+            #El ciclo foreach tambien nos permite recorrer arreglo asociativos
+            foreach($jesus as $dato => $valores){
+                echo "\n" . $dato . ":" . $valores . "\n";
             }
         ?>
     </ul>

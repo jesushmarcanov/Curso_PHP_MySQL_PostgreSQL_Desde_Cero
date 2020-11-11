@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="recibe.php" method="post">
+    <form action="recibe.php" method="get">
         <input type="text" placeholder="Nombre:" name="nombre"><br>
         <label for="hombre">Hombre</label>
         <input type="radio" name="sexo" value="hombre" id="hombre">
